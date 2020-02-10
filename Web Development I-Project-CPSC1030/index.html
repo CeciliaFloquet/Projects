@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Water Cooler Chat</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<script src="main.js" defer></script>
+        
+    </head>
+    
+    <body id="hi">
+       
+        <div id="menus">
+            <div id="menu" class="menu">
+				<i  id="icon" class="far fa-comments"></i>
+                <div id="user">
+                    <input type="text">
+                    <button id="first1" >Set name</button>
+                    <button name="Jason">Set name to Jason</button>
+                    <button name="Abby">Set name to Abby</button>
+                </div>
+                <hr>
+				<nav id="nav1" class="navbar navbar-expand-sm navbar-light" style="background-color: #0d34e0">
+					<a class="navbar-brand" href="#"></a>
+					<button  id="buttonResponsive" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span id="buttonResponsive1" class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav" >
+						<div id="temp">
+							<div id="rooms" style="background-color: #0d34e0">
+								<input type="text">
+								<button id="first" onclick="join1()">Join room</button>
+								<button id="second" onclick="red()" join="red">Join red room</button>
+								<button id="third"onclick="blue()" join="blue">Join blue room</button>
+								<button id="four" onclick="green()" join="green">Join green room</button>
+							</div>
+							<hr>
+							<p id="change1">Number of people in this room:</p>
+							<div id="num" style="background-color: #0d34e0"></div>  
+							<hr> 
+							<p id="change2">Your current room:</p>
+							<div id="current-room" style="background-color: #0d34e0"></div>     
+							<hr >
+							<p id="change3">Your name:</p>
+							<div id="members" style="background-color: #0d34e0"></div> 
+						</div>  
+					</div>
+				</nav>
+			</div>        
+		</div>
+		<div id="chat" messages-to-keep=10 latest-message-duration=1 timeago-update-interval=60></div>   
+		<div id="messages" class="d-flex flex-column-reverse" class="panel-default"></div>            
+		<div id="input" >
+			<input type="text">
+			
+			<div class="dropdown show">
+				<button id = "whats1" class="send">send</button>
+				<a  id= "whats" class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="far fa-smile"></i>
+				</a>
+				<div class="dropdown-menu">
+					<button class="one" send="<i class='far fa-thumbs-up'></i>"><i class="far fa-thumbs-up"></i></button>
+					<button class="two" send="<i class='far fa-heart'></i>"> <i class="far fa-heart"></i></button>   
+					<button class="three" send="<i class='far fa-frown'></i>"> <i class="far fa-frown"></i></button>
+					<button class="four" send="<i class='far fa-smile'></i>"> <i class="far fa-smile"></i></button>     
+					<button class="four" send="<i class='far fa-smile'></i>"> <i class="far fa-smile"></i></button>    
+					<button class="five" send="<i class='far fa-angry'></i>"> <i class="far fa-angry"></i></button>  
+					<button class="six" send=" <i class='fas fa-at'></i>">  <i class="fas fa-at"></i></button> 
+					<button class="seven" send="<i class='fas fa-band-aid'></i>"> <i class="fas fa-band-aid"></i></button> 
+					<button class="eight" send="<i class='fas fa-bath'></i>"> <i class="fas fa-bath"></i></button> 
+					<button class="nine" send="<i class='fas fa-bed'></i>"> <i class="fas fa-bed"></i></button> 
+					<button class="ten" send="<i class='fas fa-beer'></i>"> <i class="fas fa-beer"></i></button> 
+					<button class="eleven" send="<i class='fas fa-bicycle'></i>"> <i class="fas fa-bicycle"></i></button>  
+					<button class="twelve" send="<i class='fas fa-birthday-cake'></i>"> <i class="fas fa-birthday-cake"></i></button> 
+					<button class="thirteen" send="<i class='fas fa-bible'></i>"> <i class="fas fa-bible"></i></button> 
+				</div>
+			</div>   
+		</div>
+	</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script src="http://css.operatoroverload.com/project/js/timeago.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+    <script src="http://css.operatoroverload.com/project/js/chat.js"></script> 
+</html> 
+    

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"> 
+    <head>
+		<meta charset="utf-8"> 
+		<title>Bomb Man</title>
+		<meta name="description" content="The HTML5 Starter">
+		<meta name="author" content="CPSC1030">
+		<script src="js/main.js" type="text/javascript" defer></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+    </head> 
+	<body>
+		<nav>
+			<ul>
+				<li>
+				<a  class="howtoplay" href="howtoplay.html"  target="_blank">How to play</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="container">
+	<button class="buttonPlay" id="play" type=" button" onclick="init()">Start</button>
+		<h1 id="timer">Time </h1>
+		<h1>Name:</h1><p id="showName"></p>
+		<p id="showLife"></p>
+		</div>
+		<div class="canvasContainer">
+		<canvas id="myCanvas" ></canvas>
+		</div>
+	</body>
+</html>

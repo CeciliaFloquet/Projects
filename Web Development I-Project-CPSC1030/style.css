@@ -1,0 +1,576 @@
+/* Small Devices, Tablets */
+@media only screen and (min-width: 1000px){
+    /*hide possibility of changing my name*/
+    #user[name]{
+    display: none;
+    }
+    /*bold my name*/
+    #members .self{
+        font-weight: bold;
+        display:initial;
+    }
+    /*body color*/
+    #hi{
+        background-color: #ebeefe;
+    }
+    /*not show the members*/
+    #members div {
+        display:none;
+    }
+    /*change the position of msg*/
+    #messages div{
+    margin-left: 50%;
+        text-align: left;
+        margin-right: 2%;
+        border-radius: 5px;
+    }
+    /*change some space in msg(message and time) in the line*/
+    #messages div span, #messages div span time{
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    /*change some space in DIV msg*/
+    #messages div {
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #b0befa;
+        color:#091034;
+        margin-left:5%;
+        margin-right:50%;
+    }
+	/*change the font of everybody name*/
+    #messages div :first-child{
+        font-weight: bold;
+    }
+    /*change the font of every time */
+    #messages div :last-child{
+        font-size: 0.7em;
+    
+    } 
+    /*color of navbar responsive*/
+    #rooms, #user{
+        background-color:  #0d34e0; 
+    
+    }
+    /*color of button of rooms and user*/
+    #rooms button, #user button{
+    background-color: #b0befa; 
+    color:#0d34e0;
+    }
+    /*color for my msg*/
+    #messages .self{
+        background-color:#8499f8;
+        margin-left:40%;
+        margin-right:5%;
+        
+    }
+    /*design navbar*/
+    #menu{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #0d34e0; 
+        position: fixed;
+        height: 100%;
+        overflow: auto; 
+        float:left; 
+        text-align: center;
+    }
+	/*my msg when I change the room*/
+	.red {
+		background-color: #FCDEE0;
+	}
+	/*my msg when I change the room*/
+	.red > .self {
+		background-color: #F37C84 !important; 
+	}
+	/*my msg when I change the room*/
+	.green {
+		background-color: #9BD770;
+	}
+	/*my msg when I change the room*/
+	.green > .self {
+		background-color: #EBF7E3 !important;
+	}	
+	/*my msg when I change the room*/
+	.blue {
+		background-color: #ebeefe;
+	}
+	/*my msg when I change the room*/
+	.blue > .self {
+		background-color: #8499f8 !important;
+	}
+	.blue1 {
+		background-color: #ebeefe;
+	}
+	/*my msg when I change the room*/
+	.blue1 > .self {
+		background-color: #8499f8 !important;
+	}	
+	/*because I used float*/
+    #chat{
+        padding-left: 25%;
+    }
+    .multiple, #num, #current-room, .self{
+        color:white;
+    }
+    /*not show*/
+    [name=Jason], [name=Abby]{
+        display:none;
+    }
+     /*design the nav rooms*/
+    #rooms{
+        display:block;
+        text-align: center;
+		margin-right:0;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        width:100%;
+    }
+     /*design the nav rooms*/
+    #rooms button{
+        display:block;
+        text-align: center;
+		margin-right:0;
+        margin: 4px 2px;
+        padding: 15px 60px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        width:100%;
+    }
+    #first. #second{
+        padding: 15px 100px; 
+    }
+    #input input{
+        border-radius: 5px;
+        width:100%;
+        margin-right: 0;  
+    }
+    /*good things that I write*/   
+    p{
+        color:white;
+        background-color: #0d34e0; 
+    }
+    /*not show*/
+    #rooms input{
+        display: none;
+    }
+    /*good for separate the navbar*/
+    hr{
+        background-color:white;
+    }
+    /*img of chat*/
+    #icon{
+        margin-top:10%;
+        margin-bottom:10%;
+        text-shadow: 1px 1px 1px #ccc;
+        font-size: 500%;
+        color: #b0befa;
+    }
+    /*color of button img*/
+    .btn{
+        background-color: #b0befa; 
+        color:#0d34e0;
+    }
+    #input{
+        margin-top: 0%;
+        padding-left:25%;
+    }
+    #messages{
+        padding-top: 7%;
+        padding-bottom:3%;
+        margin-left:23%;
+    }
+	#hi{
+		overflow: hidden;
+	}
+
+	#nav1{
+		width:100%;
+	}
+	#navbarNav{
+		width:100%;
+	}
+	#whats, #whats1{
+        background-color: #b0befa; 
+        color:#0d34e0;
+    }
+
+}
+
+@media only screen and (max-width: 999px){
+   
+	/*hide possibility of changing my name*/
+	#user[name]{
+    display: none;
+    }
+    /*bold my name*/
+    #members .self{
+        font-weight: bold;
+        display:initial;
+    }
+    /*body color*/
+	#hi{
+        background-color: #ebeefe;
+    }
+    /*not show the members*/
+    #members div {
+        display:none;
+    }
+    /*change the position of msg*/
+    #messages div{
+        text-align: center;
+        margin-right: 2%;
+        border-radius: 5px;
+    }
+    /*change some space in msg(message and time) in the line*/
+    #messages div span, #messages div span time{
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    /*change some space in DIV msg*/
+    #messages div{
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #b0befa; 
+        color:#091034;
+        margin-left:5%;
+        margin-right:50%;
+    }
+    /*change the font of everybody name*/
+    #messages div :first-child{
+        font-weight: bold;
+    }
+    /*change the font of every time */
+    #messages div :last-child{
+        font-size: 0.7em;
+    }   
+    /*color of navbar responsive*/
+    #rooms, #user{
+        background-color:  #0d34e0; 
+    }
+    /*color of button of rooms and user*/
+    #rooms button, #user button{
+		background-color: #b0befa; 
+		color:#0d34e0;
+    }
+    /*color for my msg*/
+    #messages .self{
+        background-color:#8499f8;
+        margin-left:40%;
+        margin-right:5%;
+    }
+    /*design navbar*/
+    #menu{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #0d34e0; 
+        text-align: center;
+    }
+    /*because I used float*/
+    .multiple, #num, #current-room, .self{
+        color:white;
+        background-color: #0d34e0; 
+    }
+    /*not show*/
+    [name=Jason], [name=Abby]{
+        display:none;
+    }
+     /*design the nav rooms*/
+    #rooms{
+        display:block;
+        text-align: center;     
+        border-radius: 5px;
+		width:100%;
+        text-align: center;
+        font-size: 16px;
+		cursor: pointer;
+    }
+     /*design the nav rooms*/
+    #rooms button{
+        display:block;
+        text-align: center;
+        margin: 4px 2px;
+        padding: 15px 100px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+        width:100%;
+    }
+    first{
+        padding: 15px 100px; 
+    }
+    #input input{
+        border-radius: 5px;
+        width:100%;
+        margin-right: 0;       
+    }
+    /*good things that I write*/   
+    p{
+        color:white;
+    }
+    /*not show*/
+    #rooms input{
+        display: none;
+    }
+    /*good for separate the nav bar*/
+    hr{
+        background-color:white;
+    }
+    /*img of chat*/
+    #icon{
+        text-shadow: 1px 1px 1px #ccc;
+        font-size: 500%;
+        color: #b0befa;
+    }
+    /*color of button img*/
+    .btn{
+        background-color: #b0befa; 
+        color:#0d34e0;
+    }
+    /*color of button inside img*/
+   #whats,  #whats1{
+        background-color: #b0befa; 
+        color:#0d34e0;
+    }
+    #input{
+        margin-top: 0%;
+        background-color: #0d34e0; 
+    }
+    #messages{
+		padding-top: 5%;
+        padding-bottom:5%;
+    }
+	/*size of navbar button*/
+    #temp{
+		width:100%
+	}
+	/*my msg when I change the room*/
+	.red {
+		background-color: #FCDEE0;
+	}
+	/*my msg when I change the room*/
+	.red > .self {
+		background-color: #F37C84 !important; 
+	}
+	/*my msg when I change the room*/
+	.green {
+		background-color: #9BD770;
+	}
+	/*my msg when I change the room*/
+	.green > .self {
+		background-color: #EBF7E3 !important;
+	}	
+	/*my msg when I change the room*/
+	.blue {
+		background-color: #ebeefe;
+	}
+	/*my msg when I change the room*/
+	.blue > .self {
+		background-color: #8499f8 !important;
+	}
+	.blue1 {
+		background-color: #ebeefe;
+	}
+	/*my msg when I change the room*/
+	.blue1 > .self {
+		background-color: #8499f8 !important;
+	}
+
+}
+
+@media only screen and (max-width: 576px){
+	
+	/*hide possibility of changeing my name*/
+	#user[name]{
+    display: none;
+    }
+    /*bold my name*/
+    #members .self{
+        font-weight: bold;
+        display:initial;
+    }
+    /*body color*/
+    #hi{
+        background-color: #ebeefe;
+    }
+    /*not show the members*/
+    #members div {
+        display:none;
+    }
+    /*change the position of msg*/
+    #messages div{
+        text-align: center;
+        margin-right: 2%;
+        border-radius: 5px;
+    }
+    /*change some space in msg(message and time) in the line*/
+    #messages div span, #messages div span time{
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    /*change some space in DIV msg*/
+    #messages div{
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #b0befa; 
+        color:#091034;
+        margin-left:5%;
+        margin-right:50%;
+    }
+    /*change the font of everybody name*/
+    #messages div :first-child{
+        font-weight: bold;
+    }
+    /*change the font of every time */
+    #messages div :last-child{
+        font-size: 0.7em;
+    }
+    /*color of navbar responsive*/
+    #rooms, #user{
+        background-color:  #0d34e0; 
+    }
+    /*color of button of rooms and user*/
+    #rooms button, #user button{
+    background-color: #b0befa; 
+    color:#0d34e0;
+    }
+    /*color for my msg*/
+    #messages .self{
+        background-color:#8499f8;
+        margin-left:40%;
+        margin-right:5%;
+    }
+    /*design navbar*/
+    #menu{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #0d34e0; 
+		text-align: center;
+    }
+    .multiple, #num, #current-room, .self{
+        color:white;
+		background-color: #0d34e0; 
+    }
+    /*not show*/
+    [name=Jason], [name=Abby]{
+        display:none;
+    }
+     /*design the nav rooms*/
+    #rooms{
+        display:block;
+        text-align: center;    
+        border-radius: 5px;      
+        text-align: center;
+        font-size: 16px;
+		cursor: pointer;
+    }
+     /*design the nav rooms*/
+   #rooms button{
+        display:block;
+        text-align: center;
+        margin: 4px 2px;
+        padding: 15px 32px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+		width:100%;
+    }
+    #input input{
+        border-radius: 5px;
+        width:100%;
+        margin-right: 0;
+    }
+    /*good things that I write*/   
+    p{
+        color:white;
+    }
+    /*not show*/
+    #rooms input{
+        display: none;
+    }
+    /*good for separate the nav bar*/
+    hr{
+        background-color:white;
+    }
+    /*img of chat*/
+    #icon{
+        text-shadow: 1px 1px 1px #ccc;
+        font-size: 500%;
+        color: #b0befa;
+    }
+    /*color of button img*/
+    .btn{
+        background-color: #b0befa; 
+        color:#0d34e0;
+    }
+    /*color of button inside img*/
+    #input{
+        margin-top: 0%;
+        background-color: #0d34e0; 
+    }
+    #messages{
+		padding-top: 5%;
+        padding-bottom:5%;
+    }
+    #temp{
+		width:100%
+	}
+	#buttonResponsive, #buttonResponsive1{
+		background-color: #b0befa;
+	}
+	/*my msg when I change the room*/
+	.red {
+		background-color: #FCDEE0;
+	}
+	/*my msg when I change the room*/
+	.red > .self {
+		background-color: #F37C84 !important; 
+	}
+	/*my msg when I change the room*/
+	.green {
+		background-color: #9BD770;
+	}
+	/*my msg when I change the room*/
+	.green > .self {
+		background-color: #EBF7E3 !important;
+	}	
+	/*my msg when I change the room*/
+	.blue {
+		background-color: #ebeefe;
+	}
+	/*my msg when I change the room*/
+	.blue > .self {
+		background-color: #8499f8 !important;
+	}
+	.blue1 {
+		background-color: #ebeefe;
+	}
+	/*my msg when I change the room*/
+	.blue1 > .self {
+		background-color: #8499f8 !important;
+	}
+	
+		
+}
